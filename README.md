@@ -1,2 +1,1 @@
-# Atividade-MVC
-Atividade Ponderada MVC
+Diagrama de arquitetura
