@@ -29,17 +29,26 @@ Por fim, há uma visualização denominada Forms Results, reservada aos administ
 # <a name="c1"></a> Controllers
 &nbsp;&nbsp;&nbsp;&nbsp;
 Na arquitetura Modelo-Visão-Controlador (MVC), os controladores assumem a responsabilidade de receber as requisições feitas pelo usuário, interpretá-las e coordenar as interações entre os models e as views. Eles asseguram que a lógica de negócios seja adequadamente aplicada aos dados e que a interface do usuário seja atualizada conforme as ações do usuário e as alterações nos dados.
+
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 No modelo apresentado acima, são identificados seis controladores. O primeiro, denominado Users, desempenha o papel de arquivar e validar as informações do usuário junto ao servidor, atuando como uma interface entre a tela de login e o banco de dados que armazena os dados dos usuários. Este controlador possui os métodos "archive" para armazenar os dados no banco de dados, "Validate" para autenticar as informações quando um usuário tenta fazer login e "CheckRole" para determinar o acesso do usuário com base em seu papel no sistema, seja para visualizar formulários, resultados ou outras funcionalidades correspondentes ao seu papel.
+
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 Por fim, há um controller destinado a facilitar as operações relacionadas à parte administrativa. Este controller conta com os métodos "search", para permitir a pesquisa das informações desejadas pelo administrador, e "RegionButton", que tem o propósito de exibir as regiões dos usuários que responderam ao formulário.
 
 # <a name="c1"></a> Models
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 Os modelos desempenham um papel fundamental na arquitetura MVC (Model-View-Controller), representando a camada responsável pelo acesso aos dados e pela lógica de negócios subjacente à aplicação. Em uma aplicação típica baseada em MVC, os modelos são encarregados de gerenciar os dados da aplicação e as regras de negócios associadas a esses dados.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
+
 Na arquitetura delineada anteriormente, foram desenvolvidos 5 modelos, correspondendo a cada controller definido. O primeiro modelo, denominado User, está associado ao controller User. Ele inclui os atributos ID, Role, Name e Password, que são essenciais para o cadastro e login dos usuários na aplicação. Esses atributos são diretamente relacionados às operações de acesso ao banco de dados quando ocorrem tais eventos, permitindo o funcionamento adequado da aplicação.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 Em seguida, os models para acesso aos dados dos formulários são implementados, exibindo atributos como ID, Name e Answer. Esses atributos desempenham um papel crucial na persistência das respostas dos usuários e na identificação do usuário correspondente. Ao armazenar essas informações, os modelos garantem a integridade e rastreabilidade das respostas fornecidas pelos usuários nos formulários.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 No final da lista de models, temos o controller Admin, que possibilita ao administrador acessar, por meio de sua página no sistema de administração, as tabelas e gráficos contendo os dados da pesquisa. Este controller é responsável por coordenar a apresentação dos dados de forma organizada e compreensível para o administrador, permitindo uma análise eficaz dos resultados da pesquisa.
