@@ -16,24 +16,27 @@ Para fazer o MVC eu utilizei a ferramenta <a href="https://app.diagrams.net/">Dr
 &nbsp;&nbsp;&nbsp;&nbsp;
 As views, constituem a interface de apresentação da aplicação, desempenhando um papel crucial na exibição dos dados ao usuário de forma acessível e interativa. Elas atuam como o ponto de contato direto entre o sistema e o usuário, traduzindo informações complexas em elementos visuais compreensíveis e proporcionando uma experiência de interação intuitiva.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 O meu projeto tem 6 views, sendo elas a Initial Screen, Registration/Login Screen, Forms Screen, Future Form Screen, Last Form Screen e Form Results.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 A primeira tela, denominada "Initial Screen", abrange todos os elementos presentes na tela inicial da aplicação, incluindo a Navigation Bar, Header, Imagens relacionadas ao projeto e um Footer. Além disso, oferece funcionalidades interativas por meio de botões que direcionam o usuário para outras seções dentro dessa mesma tela inicial. Por não necessitar de interações com outros componentes, não há setas que a conectem a algum Controller.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 A segunda tela, conhecida como "Register/Login Screen", é acessível por meio do botão "Register/Login" ou do botão "Forms" na Initial Screen. Nesta etapa, os usuários têm a opção de inserir seu endereço de e-mail e senha para efetuar login ou registro, ou optar por fazer login usando a conta do Google. Todas as informações fornecidas são registradas, verificadas e validadas por meio de um controller chamado "User", que encaminha esses dados para serem armazenados no banco de dados.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 Posteriormente, o sistema apresenta três visualizações destinadas a armazenar informações das diferentes perguntas nos formulários disponíveis no site. A primeira é designada para a primeira pergunta "Forms Screen", a segunda para a pergunta subsequente "Future Form Screen" e a terceira para a última pergunta "Last Form Screen". Estes formulários são compostos por um título principal "h1" contendo a questão, uma caixa de resposta, uma barra de progresso, um botão para avançar para a próxima pergunta e outro para retroceder para a pergunta anterior. Na página Last Form Screen, em vez de um botão para a próxima pergunta, há um botão para enviar as respostas.
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 Por fim, há uma visualização denominada Forms Results, reservada aos administradores que possuem acesso aos resultados da pesquisa. Nesta visualização, os administradores podem visualizar as tabelas contendo os dados preenchidos pelos respondentes. A interface do Admin inclui gráficos para exibir os resultados, um botão de busca para encontrar resultados específicos, um botão de filtragem por região e um botão para ocultar os dados exibidos na tela.
 
 # <a name="c1"></a> Controllers
 &nbsp;&nbsp;&nbsp;&nbsp;
 Na arquitetura Modelo-Visão-Controlador (MVC), os controladores assumem a responsabilidade de receber as requisições feitas pelo usuário, interpretá-las e coordenar as interações entre os models e as views. Eles asseguram que a lógica de negócios seja adequadamente aplicada aos dados e que a interface do usuário seja atualizada conforme as ações do usuário e as alterações nos dados.
-
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 No modelo apresentado acima, são identificados seis controladores. O primeiro, denominado Users, desempenha o papel de arquivar e validar as informações do usuário junto ao servidor, atuando como uma interface entre a tela de login e o banco de dados que armazena os dados dos usuários. Este controlador possui os métodos "archive" para armazenar os dados no banco de dados, "Validate" para autenticar as informações quando um usuário tenta fazer login e "CheckRole" para determinar o acesso do usuário com base em seu papel no sistema, seja para visualizar formulários, resultados ou outras funcionalidades correspondentes ao seu papel.
-
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 Por fim, há um controller destinado a facilitar as operações relacionadas à parte administrativa. Este controller conta com os métodos "search", para permitir a pesquisa das informações desejadas pelo administrador, e "RegionButton", que tem o propósito de exibir as regiões dos usuários que responderam ao formulário.
