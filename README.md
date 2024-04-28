@@ -1,7 +1,6 @@
 # <a name="c1"></a> Abandono Zero
 
 # <a name="c1"></a> Descrição
-
 &nbsp;&nbsp;&nbsp;&nbsp;
 No contexto atual, o abandono de animais é uma questão alarmante que afeta comunidades em todo o mundo. Enquanto esforços significativos têm sido feitos para abordar esse problema, a falta de dados concretos sobre os motivos que levam os donos a abandonarem seus animais representa um desafio significativo. Compreender as razões por trás do abandono é fundamental para desenvolver estratégias eficazes de prevenção e intervenção. Este projeto busca preencher essa lacuna, explorando a relação entre a falta de dados sobre os motivos do abandono de animais e os próprios motivos do abandono. Ao fazê-lo, não apenas esperamos fornecer dados para informar políticas e programas de conscientização, mas também contribuir para a proteção e o bem-estar dos animais em nossas comunidades.
 
@@ -43,7 +42,6 @@ Por fim, há um controller destinado a facilitar as operações relacionadas à 
 
 # <a name="c1"></a> Models
 &nbsp;&nbsp;&nbsp;&nbsp;
-
 Os modelos desempenham um papel fundamental na arquitetura MVC (Model-View-Controller), representando a camada responsável pelo acesso aos dados e pela lógica de negócios subjacente à aplicação. Em uma aplicação típica baseada em MVC, os modelos são encarregados de gerenciar os dados da aplicação e as regras de negócios associadas a esses dados.
 &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -59,3 +57,19 @@ No final da lista de models, temos o controller Admin, que possibilita ao admini
 # <a name="c1"></a> Infraestrutura
 &nbsp;&nbsp;&nbsp;&nbsp;
 O projeto utiliza um banco de dados PostgreSQL para armazenar informações cruciais, como os dados dos usuários, respostas dos formulários e outras informações relacionadas à pesquisa. Os controladores interagem com os modelos para acessar e manipular os dados conforme necessário, garantindo a aplicação adequada da lógica de negócios nos dados armazenados no banco de dados.
+
+# <a name="c1"></a> Implicações na arquitetura
+&nbsp;&nbsp;&nbsp;&nbsp;
+A adoção da arquitetura MVC (Model-View-Controller) para este projeto é justificada pelos seus benefícios em termos de escalabilidade, manutenção, testabilidade e flexibilidade.
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Em relação à escalabilidade, a arquitetura MVC facilita a distribuição eficiente de responsabilidades entre os diversos componentes da aplicação. Isso viabiliza a escalabilidade horizontal e vertical do sistema. Os controladores e modelos podem ser distribuídos em diferentes servidores conforme necessário para lidar com um aumento na carga de trabalho, aproveitando a capacidade de escalabilidade horizontal da arquitetura MVC. Além disso, a modularidade da arquitetura permite otimizar cada componente independentemente para lidar com uma maior demanda, contribuindo para a escalabilidade vertical do projeto.
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Em termos de manutenção, a arquitetura MVC promove a modularidade do código, o que facilita a manutenção ao longo do ciclo de vida do projeto. As responsabilidades são claramente separadas entre os modelos, visualizações e controladores, permitindo que alterações em um componente sejam feitas com pouco impacto nos outros componentes. Isso reduz o risco de introduzir erros e facilita a reutilização de código, já que componentes como modelos e serviços podem ser compartilhados entre diferentes partes da aplicação, diminuindo a duplicação de código.
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Em relação à testabilidade, a arquitetura MVC facilita o teste de integração, permitindo testar as camadas da aplicação de forma isolada. Isso possibilita uma cobertura de teste mais abrangente e simplifica a identificação e correção de bugs.
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Por fim, em termos de flexibilidade, a arquitetura MVC oferece a capacidade de adaptar a aplicação a novos requisitos e mudanças no ambiente operacional. Novas funcionalidades podem ser adicionadas facilmente, e os componentes existentes podem ser modificados ou substituídos conforme necessário, garantindo a evolução contínua da aplicação.
