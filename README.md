@@ -10,4 +10,4 @@ Estamos criando um website com um questionário que terá como objetivo coletar 
 
 # <a name="c1"></a>Ferramentas de Diagramação
 &nbsp;&nbsp;&nbsp;&nbsp;
-Para fazer o MVC eu utilizei a ferramenta draw.io que foi indicada pelo professor Afonso durante a aula.
+Para fazer o MVC eu utilizei a ferramenta <a href="https://app.diagrams.net/">Draw.io</a> que foi indicada pelo professor Afonso durante a aula.
