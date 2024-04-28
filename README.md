@@ -55,3 +55,7 @@ Em seguida, os models para acesso aos dados dos formulários são implementados,
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 No final da lista de models, temos o controller Admin, que possibilita ao administrador acessar, por meio de sua página no sistema de administração, as tabelas e gráficos contendo os dados da pesquisa. Este controller é responsável por coordenar a apresentação dos dados de forma organizada e compreensível para o administrador, permitindo uma análise eficaz dos resultados da pesquisa.
+
+# <a name="c1"></a> Infraestrutura
+&nbsp;&nbsp;&nbsp;&nbsp;
+O projeto utiliza um banco de dados PostgreSQL para armazenar informações cruciais, como os dados dos usuários, respostas dos formulários e outras informações relacionadas à pesquisa. Os controladores interagem com os modelos para acessar e manipular os dados conforme necessário, garantindo a aplicação adequada da lógica de negócios nos dados armazenados no banco de dados.
