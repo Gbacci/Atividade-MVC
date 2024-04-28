@@ -11,3 +11,9 @@ Estamos criando um website com um questionário que terá como objetivo coletar 
 # <a name="c1"></a>Ferramentas de Diagramação
 &nbsp;&nbsp;&nbsp;&nbsp;
 Para fazer o MVC eu utilizei a ferramenta <a href="https://app.diagrams.net/">Draw.io</a> que foi indicada pelo professor Afonso durante a aula.
+
+# <a name="c1"></a> Views
+&nbsp;&nbsp;&nbsp;&nbsp;
+As views, constituem a interface de apresentação da aplicação, desempenhando um papel crucial na exibição dos dados ao usuário de forma acessível e interativa. Elas atuam como o ponto de contato direto entre o sistema e o usuário, traduzindo informações complexas em elementos visuais compreensíveis e proporcionando uma experiência de interação intuitiva.
+
+O meu projeto tem 6views, sendo elas a Initial Screen, Registration/Login Screen, Forms Screen, Future Form Screen, Last Form Screen e Form Results.
